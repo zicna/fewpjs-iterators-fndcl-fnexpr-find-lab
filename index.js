@@ -9,10 +9,11 @@ function superbowlWin(arrayOfObjects) {
   let result = arrayOfObjects.find((e) => {
     return e["result"] === "W";
   });
-  if (result) {
-    return result["year"];
-  } else {
-    return undefined;
-  }
+//   if (result) {
+//     return result["year"];
+//   } else {
+//     return undefined;
+//   }
+return !!result ? result["year"] : undefined
 }
 
